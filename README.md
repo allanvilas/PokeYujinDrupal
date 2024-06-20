@@ -1,5 +1,7 @@
 # Pokédex em Drupal
 
+![image](https://github.com/allanvilas/PokeYujinDrupal/assets/48562415/c51da562-80d1-4cfa-8311-1763e87b9f03)
+
 Este projeto é uma Pokédex criada usando o CMS Drupal, MySQL e rodando em um ambiente Linux com WSL (Windows Subsystem for Linux). O objetivo deste projeto é fornecer uma base de dados de Pokémon com informações detalhadas sobre cada um deles, utilizando as funcionalidades e extensibilidade do Drupal.
 
 ## Descrição do Projeto
@@ -20,21 +22,18 @@ A Pokédex em Drupal é um aplicativo web que permite aos usuários navegar por 
 
 A estrutura principal do projeto é organizada da seguinte forma:
 ```sql
-pokedex-drupal/
+drupal/
 ├── modules/
 │ ├── custom/
-│ │ └── pokedex_module/
+│ │ └── module/
 │ │ ├── src/
 │ │ ├── templates/
-│ │ ├── pokedex_module.info.yml
-│ │ └── pokedex_module.module
 ├── themes/
 │ ├── custom/
-│ │ └── pokedex_theme/
+│ │ └── theme/
 │ │ ├── css/
 │ │ ├── js/
 │ │ ├── templates/
-│ │ └── pokedex_theme.info.yml
 ├── sites/
 │ ├── default/
 │ │ ├── settings.php
