@@ -1,0 +1,28 @@
+id: migrate_csv
+label: Migrate from csv
+source:
+  plugin: csv
+  path: modules/custom/migrated_content/importfiles/migrate.csv
+  delimiter: ","
+  header_offset: 0
+  ids:
+  - field_num
+process:
+  titley: field_nome
+  body/value: body
+  body/format: textformat
+  field_descricao: field_descricao
+  field_nome: field_nome
+  field_num: field_num
+  field_next: field_next
+  field_previous: field_previous
+  field_tipo: field_tipo
+  field_tags: field_tags
+  uid:
+    plugin: default_value
+    default_values: 1
+  type:
+    plugin: default_value
+    default_value: migrated_content
+  destination:
+    plugin: 'entity:node'
